@@ -1,0 +1,55 @@
+@use '../abstracts/variables' as var;
+
+body,
+* {
+  font-family: var.$font-family-primary;
+  font-size: var.$font-size-normal;
+  font-weight: var.$font-weight-lighter;
+  line-height: var.$line-height-base;
+}
+
+body {
+  color: var.$black-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var.$font-family-base;
+}
+
+h1 {
+  font-size: var.$font-size-large;
+  font-weight: var.$font-weight-bolder;
+}
+
+h2 {
+  font-size: var.$font-size-biggest;
+  font-weight: var.$font-weight-bolder;
+}
+
+h3,
+h4,
+h5 {
+  font-weight: var.$font-weight-bold;
+}
+
+h3 {
+  font-size: var.$font-size-bigger;
+}
+
+h4 {
+  font-size: var.$font-size-big;
+}
+
+h5 {
+  font-size: var.$font-size-normal;
+}
+
+h6 {
+  font-size: var.$font-size-small;
+  font-weight: var.$font-weight-normal;
+}

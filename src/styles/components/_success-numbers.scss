@@ -1,0 +1,26 @@
+@use '../abstracts/variables' as var;
+
+.success {
+  &-box {
+    margin-bottom: 11rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    border-top: 2px solid var.$black-color;
+    border-bottom: 2px solid var.$black-color;
+    p {
+      color: var(--orange-color);
+    }
+  }
+  &-number {
+    font-size: var.$font-size-larger;
+    font-weight: var.$font-weight-bolder;
+    font-family: var.$font-family-base;
+
+    span {
+      font-size: var.$font-size-larger;
+      font-family: var.$font-family-base;
+      color: var(--orange-color);
+      font-weight: var.$font-weight-bolder;
+    }
+  }
+}

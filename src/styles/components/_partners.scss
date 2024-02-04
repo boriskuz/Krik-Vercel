@@ -1,0 +1,24 @@
+@use '../abstracts/variables' as var;
+
+.partners {
+  h1 {
+    margin-bottom: 5.4rem;
+  }
+
+  &-box {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    border-top: 2px solid var.$black-color;
+    border-bottom: 2px solid var.$black-color;
+    margin-bottom: 11.7rem;
+
+    &__row {
+      gap: 10rem;
+
+      img {
+        max-height: 7rem;
+        object-fit: contain;
+      }
+    }
+  }
+}

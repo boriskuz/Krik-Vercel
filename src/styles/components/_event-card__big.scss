@@ -1,0 +1,79 @@
+@use '../abstracts/variables' as var;
+
+.event-box {
+  min-height: 52rem;
+
+  .event-soon {
+    position: relative;
+
+    &__card {
+      position: absolute;
+      top: -30%;
+    }
+
+    .event-info {
+      background-color: var.$black-color;
+      flex-basis: 50%;
+      border-top-left-radius: 4rem;
+      border-bottom-left-radius: 4rem;
+
+      & * {
+        color: var.$white-color;
+      }
+
+      .box {
+        margin: 6.1rem 7rem;
+      }
+
+      h3 {
+        color: var(--yellow-color);
+      }
+
+      h4 {
+        margin-top: 3.4rem;
+        margin-bottom: 3.4rem;
+      }
+
+      p {
+        margin-bottom: 7.3rem;
+      }
+    }
+
+    .event-img {
+      position: relative;
+      flex-basis: 50%;
+      border-top-right-radius: 4rem;
+      border-bottom-right-radius: 4rem;
+      overflow: hidden;
+
+      img {
+        object-fit: cover;
+        height: 55.1rem;
+      }
+
+      .date {
+        padding: 2rem 3rem;
+        background-color: var.$black-color;
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-radius: 4rem;
+
+        .day {
+          display: block;
+          color: var.$white-color;
+          font-size: var.$font-size-bigger;
+          font-weight: var.$font-weight-bold;
+          font-family: var.$font-family-base;
+        }
+        .month {
+          display: block;
+          font-size: var.$font-size-big;
+          font-weight: var.$font-weight-bold;
+          color: var.$white-color;
+          font-family: var.$font-family-base;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+@use '../abstracts/variables' as var;
+
+.projects__card {
+  border-radius: 3rem;
+  overflow: hidden;
+  color: var.$white-color;
+
+  h2 {
+    padding-top: 3.2rem;
+    padding-bottom: 3.2rem;
+  }
+
+  h3,
+  h4 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  h4,
+  h3,
+  h2 {
+    margin: 0;
+  }
+
+  &-yellow {
+    background-color: var(--yellow-color);
+  }
+  &-violet {
+    background-color: var(--violet-color);
+  }
+  &-black {
+    background-color: var.$black-color;
+  }
+
+  img {
+    object-fit: cover;
+  }
+}

@@ -1,0 +1,14 @@
+:root {
+  --base-font-size: 62.5%;
+  --cursor-url: auto;
+  --cursor-position: auto;
+  --cursor-type: auto;
+  --yellow-color: #f8ac2e;
+  --orange-color: #fb5e3c;
+  --violet-color: #b8afda;
+}
+
+html {
+  font-size: var(--base-font-size);
+  cursor: var(--cursor-url) var(--cursor-position), var(--cursor-type);
+}

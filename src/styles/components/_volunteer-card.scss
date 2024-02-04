@@ -1,0 +1,18 @@
+@use '../abstracts/variables' as var;
+
+.volunteer-card {
+  margin-bottom: 3.2rem;
+  background-color: var.$white-color;
+  border-radius: 4rem;
+  overflow: hidden;
+
+  &__text {
+    padding-left: 3.2rem;
+    padding-top: 2.4rem;
+    padding-bottom: 4rem;
+
+    p {
+      font-size: var.$font-size-small;
+    }
+  }
+}

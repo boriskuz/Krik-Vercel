@@ -1,0 +1,97 @@
+@use '../abstracts/variables' as var;
+
+.accessibility-btn {
+  position: fixed;
+  right: 0;
+  top: 20rem;
+  z-index: 10;
+  border-top-left-radius: 2rem !important;
+  border-bottom-left-radius: 2rem !important;
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+.widget-box-background {
+  width: 70rem;
+  position: fixed;
+  right: 0;
+  top: 20rem;
+  z-index: 15;
+}
+
+.widget-box-header {
+  background-color: var(--orange-color);
+  color: var.$white-color;
+  border-top-left-radius: 2rem;
+  padding: 2rem 0;
+}
+
+.widget-box-body {
+  background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75));
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 3rem;
+
+  .xl-row {
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    h3,
+    h4 {
+      padding: 1rem 0;
+      text-align: center;
+      background-color: var.$white-color;
+      border-radius: 2rem;
+    }
+  }
+
+  .input-xl {
+    transform: scale(1.8);
+    margin-bottom: 7px;
+    margin-left: -17px;
+
+    &:checked {
+      background-color: var.$black-color;
+      border-color: var.$black-color;
+      box-shadow: none;
+    }
+  }
+
+  .icon {
+    text-align: center;
+
+    #cursor-check:checked ~ label,
+    #contrast-check:checked ~ label,
+    #pause-animation-check:checked ~ label,
+    #screen-reader-check:checked ~ label,
+    #reading-mask-check:checked ~ label,
+    #saturation-check:checked ~ label {
+      background-color: var(--orange-color);
+    }
+
+    label {
+      background-color: var.$white-color;
+      width: 100%;
+      border-radius: 2rem;
+      padding: 1.6rem;
+    }
+
+    img {
+      max-width: 5rem;
+      margin: auto;
+    }
+
+    .screen-reader {
+      max-width: 5.8rem;
+    }
+
+    .reading-mask {
+      max-width: 10.1rem;
+    }
+
+    .saturation {
+      max-width: 4.4rem;
+    }
+  }
+}

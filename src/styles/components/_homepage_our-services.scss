@@ -1,0 +1,43 @@
+@use '../abstracts/variables' as var;
+
+.homepage-our-services {
+  margin-bottom: 13.6rem;
+
+  h1 {
+    margin-bottom: 5.6rem;
+  }
+
+  p {
+    padding-right: 15rem;
+    line-height: 4rem;
+  }
+
+  &__image {
+    height: 56rem;
+
+    img {
+      height: 100%;
+      border-radius: 40px;
+      object-fit: cover;
+      filter: grayscale(100%);
+    }
+  }
+
+  &__service {
+    border-bottom: 2px solid var.$black-color;
+    margin-bottom: 1.6rem;
+
+    h3 {
+      cursor: pointer;
+    }
+
+    &--arrow {
+      color: var(--orange-color);
+      cursor: pointer;
+
+      &:hover {
+        color: var.$black-color;
+      }
+    }
+  }
+}

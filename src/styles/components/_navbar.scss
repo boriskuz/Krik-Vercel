@@ -1,0 +1,90 @@
+@use '../abstracts/variables' as var;
+
+.header {
+  background-color: var.$black-color;
+  & * {
+    color: var.$white-color !important;
+  }
+
+  .input {
+    font-family: var.$font-family-primary;
+    font-size: var.$font-size-small;
+    font-weight: var.$font-weight-lighter;
+    margin-bottom: 0;
+
+    &::placeholder {
+      text-transform: uppercase;
+      font-family: var.$font-family-primary;
+      font-size: var.$font-size-small;
+      font-weight: var.$font-weight-lighter;
+    }
+  }
+
+  .container {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}
+
+.navbar {
+  background-color: var(--yellow-color);
+
+  &-brand img {
+    width: 8.3rem;
+  }
+
+  .dropdown-toggle::after {
+    display: none;
+  }
+
+  .dropdown-toggle:hover {
+    &::after {
+      display: inline-block;
+    }
+  }
+
+  .nav-link.dropdown-toggle.show {
+    border: 2px solid var.$black-color;
+    border-radius: 10rem;
+    background-color: var.$black-color;
+    color: var.$white-color;
+
+    &::after {
+      display: inline-block;
+    }
+  }
+
+  .dropdown-menu.show {
+    background-color: var.$black-color;
+    a {
+      color: var.$white-color;
+      font-size: var.$font-size-small;
+      &:hover {
+        background-color: var.$black-color;
+      }
+    }
+  }
+
+  .nav-item:last-child {
+    margin-left: 1.4rem;
+  }
+
+  .nav-link {
+    color: var.$black-color;
+    font-size: var.$font-size-big;
+    font-weight: var.$font-weight-bold;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+
+    &:hover,
+    &:active {
+      border: 2px solid var.$black-color;
+      border-radius: 10rem;
+    }
+
+    &:active {
+      background-color: var.$black-color;
+      color: var.$white-color;
+    }
+  }
+}

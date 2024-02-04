@@ -1,0 +1,54 @@
+@use '../abstracts/variables' as var;
+
+.our-team-carousel {
+  margin-bottom: 14.4rem;
+  position: relative;
+
+  .slick-slide {
+    transform: scale(0.8);
+    transition: all 0.4s ease-in-out;
+    padding: 40px 0;
+  }
+
+  .slick-slide img {
+    border-radius: 4rem;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .slick-center {
+    transform: scale(1.1);
+  }
+
+  &__btns {
+    position: absolute;
+    bottom: 22rem;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+
+    span {
+      color: var.$black-color;
+
+      &:hover {
+        color: var(--yellow-color);
+      }
+    }
+  }
+
+  .slick-center .our-team-carousel__item--text {
+    text-align: center;
+    margin-top: 10rem;
+    h4 {
+      font-size: var.$font-size-biggest;
+      font-weight: var.$font-weight-bolder;
+    }
+    h6 {
+      font-size: var.$font-size-big;
+      font-weight: var.$font-weight-bold;
+    }
+  }
+
+  .slick-center &__linkedIn-btn {
+    display: block !important;
+  }
+}

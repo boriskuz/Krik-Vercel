@@ -1,0 +1,63 @@
+@use '../abstracts/variables' as var;
+
+.donate-page {
+  margin-top: 14.4rem;
+  margin-bottom: 20rem;
+
+  .services-buttons {
+    margin-top: 10rem;
+  }
+
+  &__first-row {
+    margin-top: 24rem;
+    margin-bottom: 18rem;
+
+    h4 {
+      margin-bottom: 2.4rem;
+    }
+
+    &--btns {
+      label {
+        padding: 1.2rem 6rem;
+        border-radius: 10rem;
+        font-size: var.$font-size-small;
+      }
+
+      select {
+        font-size: var.$font-size-small;
+        border-radius: 10rem;
+        padding: 1.4rem 4rem;
+        background-color: transparent;
+        border: 1px solid var.$black-color;
+      }
+
+      option {
+        font-size: var.$font-size-small;
+      }
+    }
+
+    &__about {
+      margin-top: 3.2rem;
+      margin-bottom: 4rem;
+      p {
+        line-height: 4rem;
+      }
+    }
+
+    &__pay-btns {
+      margin-top: 5.5rem;
+      .button.primary {
+        margin-left: 2.4rem;
+        padding-left: 7rem;
+        padding-right: 7rem;
+      }
+    }
+  }
+
+  &__second-row {
+    button {
+      margin-top: 4.4rem;
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+@use '../abstracts/variables' as var;
+
+.hero {
+  background-image: url('/images/homepage/hero_section.jpg');
+  background-size: cover;
+  background-position: center;
+
+  .content {
+    padding-left: 50rem;
+    padding-right: 50rem;
+    h1 {
+      margin-top: 11rem;
+    }
+
+    h3 {
+      margin-top: 11rem;
+      margin-bottom: 1.6rem;
+    }
+
+    button {
+      margin-top: 3rem;
+      margin-bottom: 42rem;
+    }
+    p {
+      padding-left: 5rem;
+      padding-right: 5rem;
+    }
+  }
+}

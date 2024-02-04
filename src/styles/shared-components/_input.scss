@@ -1,0 +1,35 @@
+@use '../abstracts/variables' as var;
+
+.input {
+  font-family: var.$font-family-base;
+  font-weight: var.$font-weight-bold;
+  font-size: var.$font-size-big;
+  display: block;
+  padding: 10px 20px 10px 20px;
+  background-color: var.$black-color;
+  border: 3px solid var.$white-color;
+  border-radius: 30px;
+  margin-bottom: 1.6rem;
+
+  &.donate {
+    margin-top: 1.6rem;
+    background-color: transparent;
+    border: 2px solid var.$black-color;
+
+    &::placeholder {
+      color: var.$grey-color;
+      font-size: var.$font-size-normal;
+    }
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &::placeholder {
+    color: var.$white-color;
+    font-family: var.$font-family-base;
+    font-size: var.$font-size-big;
+    font-weight: var.$font-weight-bold;
+  }
+}

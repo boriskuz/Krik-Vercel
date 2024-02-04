@@ -1,0 +1,52 @@
+@use '../abstracts/variables' as var;
+
+.volunteer-page {
+  margin-top: 16rem;
+  margin-bottom: 30rem;
+
+  h1 {
+    margin-bottom: 20rem;
+  }
+
+  &__radio-btns {
+    h4 {
+      margin-bottom: 1.6rem;
+    }
+
+    label {
+      width: 100%;
+      padding: 1.7rem 6rem;
+      border-radius: 10rem;
+      font-size: var.$font-size-small;
+      border: 2px solid var.$black-color;
+    }
+  }
+
+  &__slider {
+    margin-top: 3rem;
+
+    span:not(:first-of-type) {
+      margin-left: 6.9rem;
+    }
+  }
+
+  &__checkboxes {
+    h4 {
+      margin-top: 7.3rem;
+      margin-bottom: 1.6rem;
+    }
+
+    label {
+      width: 100%;
+      padding: 1.7rem 6rem;
+      border-radius: 10rem;
+      font-size: var.$font-size-small;
+      border: 2px solid var.$black-color;
+      margin-bottom: 1.6rem;
+    }
+  }
+
+  &__submit-btn {
+    margin-top: 10rem;
+  }
+}
